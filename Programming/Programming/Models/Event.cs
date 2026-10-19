@@ -1,0 +1,3 @@
+namespace RaceDayAPI.Models;
+
+public class Event { public int EventId { get; set; } public int OrganizerId { get; set; } public string EventName { get; set; } = ""; public string? Description { get; set; } public DateTime EventDate { get; set; } public string? Location { get; set; } public int MaxParticipants { get; set; } public string Status { get; set; } = "Open"; public double? Distance { get; set; } public string? EventType { get; set; } public DateTime CreatedAt { get; set; } public User? Organizer { get; set; } public ICollection<EventCategory> EventCategories { get; set; } = new List<EventCategory>(); }
